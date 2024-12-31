@@ -2,6 +2,7 @@ package kk.kkhouse777.okogeprogressbar;
 
 import com.intellij.util.ui.JBUI;
 import kk.kkhouse777.okogeprogressbar.okoge.OkogeIconStream;
+import kk.kkhouse777.okogeprogressbar.okoge.PaintIndeterminateOkogeState;
 
 import javax.swing.*;
 import javax.swing.plaf.ComponentUI;
@@ -12,10 +13,10 @@ import java.awt.event.ComponentEvent;
 
 public class OkogeProgressBarListener extends BasicProgressBarUI {
 
-    private OkogeIconStream okogeIconStream;
+    private PaintIndeterminateOkogeState paintIndeterminateOkogeState;
 
     public OkogeProgressBarListener() {
-        this.okogeIconStream = new OkogeIconStream();
+        this.paintIndeterminateOkogeState = new PaintIndeterminateOkogeState();
     }
 
     @SuppressWarnings({"MethodOverridesStaticMethodOfSuperclass", "UnusedDeclaration"})
@@ -54,6 +55,7 @@ public class OkogeProgressBarListener extends BasicProgressBarUI {
     @Override
     protected void paintDeterminate(Graphics g, JComponent c) {
         // TODO
+        super.paintDeterminate(g,c);
     }
 
 }
