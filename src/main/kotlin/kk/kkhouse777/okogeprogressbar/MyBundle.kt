@@ -1,4 +1,4 @@
-package com.github.kkhouse777.okogeprogressbar
+package kk.kkhouse777.okogeprogressbar
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls

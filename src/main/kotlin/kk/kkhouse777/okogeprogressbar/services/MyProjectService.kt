@@ -1,9 +1,9 @@
-package com.github.kkhouse777.okogeprogressbar.services
+package kk.kkhouse777.okogeprogressbar.services
 
 import com.intellij.openapi.components.Service
 import com.intellij.openapi.diagnostic.thisLogger
 import com.intellij.openapi.project.Project
-import com.github.kkhouse777.okogeprogressbar.MyBundle
+import kk.kkhouse777.okogeprogressbar.MyBundle
 
 @Service(Service.Level.PROJECT)
 class MyProjectService(project: Project) {

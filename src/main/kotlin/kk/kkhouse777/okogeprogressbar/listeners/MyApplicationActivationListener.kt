@@ -1,4 +1,4 @@
-package com.github.kkhouse777.okogeprogressbar.listeners
+package kk.kkhouse777.okogeprogressbar.listeners
 
 import com.intellij.openapi.application.ApplicationActivationListener
 import com.intellij.openapi.diagnostic.thisLogger

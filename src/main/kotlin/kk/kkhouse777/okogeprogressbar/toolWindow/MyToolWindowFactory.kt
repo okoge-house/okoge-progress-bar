@@ -1,4 +1,4 @@
-package com.github.kkhouse777.okogeprogressbar.toolWindow
+package kk.kkhouse777.okogeprogressbar.toolWindow
 
 import com.intellij.openapi.components.service
 import com.intellij.openapi.diagnostic.thisLogger
@@ -8,8 +8,8 @@ import com.intellij.openapi.wm.ToolWindowFactory
 import com.intellij.ui.components.JBLabel
 import com.intellij.ui.components.JBPanel
 import com.intellij.ui.content.ContentFactory
-import com.github.kkhouse777.okogeprogressbar.MyBundle
-import com.github.kkhouse777.okogeprogressbar.services.MyProjectService
+import kk.kkhouse777.okogeprogressbar.MyBundle
+import kk.kkhouse777.okogeprogressbar.services.MyProjectService
 import javax.swing.JButton
 
 
