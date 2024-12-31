@@ -7,7 +7,7 @@ import com.intellij.openapi.wm.IdeFrame
 import kk.kkhouse777.okogeprogressbar.OkogeProgressBarUI
 import javax.swing.UIManager
 
-class OkogeProgressBarListener :
+class OkogeProgressListener :
     LafManagerListener,
     ApplicationActivationListener {
     override fun applicationActivated(ideFrame: IdeFrame) {
