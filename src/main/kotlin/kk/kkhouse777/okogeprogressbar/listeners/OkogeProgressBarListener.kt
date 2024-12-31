@@ -4,9 +4,10 @@ import com.intellij.ide.ui.LafManager
 import com.intellij.ide.ui.LafManagerListener
 import com.intellij.openapi.application.ApplicationActivationListener
 import com.intellij.openapi.wm.IdeFrame
+import kk.kkhouse777.okogeprogressbar.OkogeProgressBarUI
 import javax.swing.UIManager
 
-internal class OkogeProgressBarListener :
+class OkogeProgressBarListener :
     LafManagerListener,
     ApplicationActivationListener {
     override fun applicationActivated(ideFrame: IdeFrame) {
@@ -23,7 +24,7 @@ internal class OkogeProgressBarListener :
 
         private fun updateProgressBar() {
             UIManager.put(PROGRESS_BAR_UI_KEY, PROGRESS_BAR_UI_CLASS_NAME)
-            UIManager.getDefaults().put(PROGRESS_BAR_UI_CLASS_NAME, OkogeProgressBarListener::class)
+            UIManager.getDefaults().put(PROGRESS_BAR_UI_CLASS_NAME, OkogeProgressBarUI::class.java)
         }
     }
 }

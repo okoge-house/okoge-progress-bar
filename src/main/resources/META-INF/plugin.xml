@@ -1,6 +1,6 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.kkhouse777.okogeprogressbar</id>
+    <id>kk.kkhouse777.okogeprogressbar</id>
     <name>okoge-progress-bar</name>
     <vendor>kk-house-777</vendor>
 
@@ -9,10 +9,22 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="kk.kkhouse777.okogeprogressbar.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <applicationConfigurable parentId="appearance"
+                                 instance="kk.kkhouse777.okogeprogressbar.configuration.OkogeProgressConfigurable"
+                                 id="org.intellij.sdk.settings.AppSettingsConfigurable"
+                                 dynamic="true"
+                                 displayName="okoge-progress-bar" />
+
+<!--        <applicationService-->
+<!--                serviceImplementation="kk.kkhouse777.okogeprogressbar.configuration.OkogePersistentStateComponent"/>-->
+<!--        <postStartupActivity-->
+<!--                implementation="kk.kkhouse777.okogeprogressbar.notification.activities.PluginUpdatedActivity"/>-->
+        <notificationGroup displayType="STICKY_BALLOON" id="okoge-progress-bar-updated"/>
     </extensions>
 
     <applicationListeners>
+        <listener class="kk.kkhouse777.okogeprogressbar.listeners.OkogeProgressBarListener"
+                  topic="com.intellij.ide.ui.LafManagerListener"/>
         <listener class="kk.kkhouse777.okogeprogressbar.listeners.OkogeProgressBarListener"
                   topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
