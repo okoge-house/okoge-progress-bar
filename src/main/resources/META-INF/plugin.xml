@@ -8,19 +8,17 @@
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <applicationConfigurable parentId="appearance"
-                                 instance="kk.kkhouse777.okogeprogressbar.configuration.OkogeProgressConfigurable"
-                                 id="org.intellij.sdk.settings.AppSettingsConfigurable"
-                                 dynamic="true"
-                                 displayName="okoge-progress-bar" />
+    <description><![CDATA[
+      Pretty progress bars with a dog (Her name is Okoge) for IJ based IDEs.
+    ]]></description>
 
-<!--        <applicationService-->
-<!--                serviceImplementation="kk.kkhouse777.okogeprogressbar.configuration.OkogePersistentStateComponent"/>-->
-<!--        <postStartupActivity-->
-<!--                implementation="kk.kkhouse777.okogeprogressbar.notification.activities.PluginUpdatedActivity"/>-->
-        <notificationGroup displayType="STICKY_BALLOON" id="okoge-progress-bar-updated"/>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
     </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
 
     <applicationListeners>
         <listener class="kk.kkhouse777.okogeprogressbar.listeners.OkogeProgressListener"
