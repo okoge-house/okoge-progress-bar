@@ -1,6 +1,7 @@
 [versions]
 # libraries
 junit = "4.13.2"
+jupiter = "5.7.1"
 
 # plugins
 changelog = "2.2.1"
@@ -11,6 +12,7 @@ qodana = "2024.2.3"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
+junit5 = { module = "org.junit.jupiter:junit-jupiter", version.ref = "jupiter"}
 
 [plugins]
 changelog = { id = "org.jetbrains.changelog", version.ref = "changelog" }

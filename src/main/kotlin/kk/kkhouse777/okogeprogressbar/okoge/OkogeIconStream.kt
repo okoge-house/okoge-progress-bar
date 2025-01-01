@@ -29,4 +29,8 @@ class OkogeIconStream(
 
     val okogeBackwardIcon: Icon
         get() = if (currentSign) OkogeIcons.OkogeBackwardIcon else OkogeIcons.OkogeBackwardIcon2
+
+    companion object {
+        val instance: OkogeIconStream by lazy { OkogeIconStream() }
+    }
 }

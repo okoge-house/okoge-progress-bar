@@ -3,7 +3,7 @@ package kk.kkhouse777.okogeprogressbar.okoge
 import javax.swing.Icon
 
 class PaintIndeterminateOkogeState(
-    private val iconStream: OkogeIconStream = OkogeIconStream(),
+    private val iconStream: OkogeIconStream = OkogeIconStream.instance,
 ) {
     var offset = 0
         private set
