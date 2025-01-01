@@ -2,12 +2,15 @@ package kk.kkhouse777.okogeprogressbar.okoge
 
 import javax.swing.Icon
 
-class PaintIndeterminateOkogeState(
+class OkogeProgressBarState(
     private val iconStream: OkogeIconStream = OkogeIconStream.instance,
 ) {
     var offset = 0
         private set
     private var velocity = 1
+
+    val currentOkogeForwardIcon: Icon
+        get() = iconStream.okogeForwardIcon
 
     fun updateOffset(threshold: Int) {
         offset += velocity
