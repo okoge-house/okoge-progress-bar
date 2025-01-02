@@ -6,10 +6,8 @@
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <description><![CDATA[
-      Pretty progress bars with a dog (Her name is Okoge) for IJ based IDEs.
+      Pretty progress bars featuring a dog named Okoge, designed for IJ-based IDEs.
     ]]></description>
 
     <extensions defaultExtensionNs="com.intellij">

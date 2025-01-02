@@ -1,8 +1,8 @@
 # okoge-progress-bar
 
 ![Build](https://github.com/kk-house-777/okoge-progress-bar/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/26236-okoge-progress-bar.svg)](https://plugins.jetbrains.com/plugin/26236-okoge-progress-bar/versions)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/26236-okoge-progress-bar.svg)](https://plugins.jetbrains.com/plugin/26236-okoge-progress-bar/reviews)
 
 <!-- Plugin description -->
 

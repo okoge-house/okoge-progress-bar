@@ -2,7 +2,7 @@
 
 # okoge-progress-bar Changelog
 
-## [released]
+## [Unreleased]
 
 ## [0.0.1] - 2025-01-02
 
@@ -10,5 +10,5 @@
 
 - Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
 
-[released]: https://github.com/kk-house-777/okoge-progress-bar/compare/v0.0.1...HEAD
+[Unreleased]: https://github.com/kk-house-777/okoge-progress-bar/compare/v0.0.1...HEAD
 [0.0.1]: https://github.com/kk-house-777/okoge-progress-bar/commits/v0.0.1
