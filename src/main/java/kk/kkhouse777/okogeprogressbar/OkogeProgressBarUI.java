@@ -58,7 +58,7 @@ public class OkogeProgressBarUI extends BasicProgressBarUI {
         if (!(g2d instanceof Graphics2D graphics2D)) return;
         int width = c.getWidth();
         int height = c.getPreferredSize().height;
-        if (!isEven(c.getHeight() - height)) height++;
+        if (isOdd(c.getHeight() - height)) height++;
         final GraphicsConfig config = GraphicsUtil.setupAAPainting(graphics2D);
 
         // background color
@@ -89,20 +89,20 @@ public class OkogeProgressBarUI extends BasicProgressBarUI {
         Insets b = progressBar.getInsets(); // area for border
         int w = progressBar.getWidth();
         int h = progressBar.getPreferredSize().height;
-        if (!isEven(c.getHeight() - h)) h++;
+        if (isOdd(c.getHeight() - h)) h++;
         int barRectWidth = w - (b.right + b.left);
         int barRectHeight = h - (b.top + b.bottom);
         if (barRectWidth <= 0 || barRectHeight <= 0) return;
 
         int amountFull = getAmountFull(b, barRectWidth, barRectHeight);
 
-        final float R2 = JBUI.scale(9f);
-        final float off = JBUI.scale(1f);
+        final float R2 = JBUI.scale(9);
+        final float off = JBUI.scale(1);
         graphics2D.setColor(progressBar.getForeground());
         graphics2D.fill(new RoundRectangle2D.Float(0, 0, w - off, h - off, R2, R2));
 
         graphics2D.setColor(PROGRESS_INDICATOR_COLOR);
-        graphics2D.fill(new RoundRectangle2D.Float(2f*off,2f*off, amountFull - JBUI.scale(5f), h - JBUI.scale(5f), JBUI.scale(7f), JBUI.scale(7f)));
+        graphics2D.fill(new RoundRectangle2D.Float(2f*off,2f*off, amountFull - JBUI.scale(5), h - JBUI.scale(5), JBUI.scale(7), JBUI.scale(7)));
         okogeProgressBarState.getCurrentOkogeForwardIcon().paintIcon(
                 progressBar,
                 graphics2D,
@@ -113,8 +113,8 @@ public class OkogeProgressBarUI extends BasicProgressBarUI {
         config.restore();
     }
 
-    private boolean isEven(int i) {
-        return i % 2 == 0;
+    private boolean isOdd(int i) {
+        return i % 2 != 0;
     }
 
 }
