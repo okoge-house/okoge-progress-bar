@@ -6,7 +6,7 @@
 
 <!-- Plugin description -->
 
-Pretty progress bars with a dog (Her name is Okoge) for IJ based IDEs.
+Pretty progress bars featuring a dog named Okoge, designed for IJ-based IDEs.
 
 <!-- Plugin description end -->
 
