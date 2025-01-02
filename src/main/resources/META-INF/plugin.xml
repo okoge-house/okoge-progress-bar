@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>kk.kkhouse777.okogeprogressbar</id>
     <name>okoge-progress-bar</name>
-    <vendor>kk-house-777</vendor>
+    <vendor>kk__777</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
