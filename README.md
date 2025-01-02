@@ -4,7 +4,11 @@
 [![Version](https://img.shields.io/jetbrains/plugin/v/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/MARKETPLACE_ID.svg)](https://plugins.jetbrains.com/plugin/MARKETPLACE_ID)
 
+<!-- Plugin description -->
+
 Pretty progress bars with a dog (Her name is Okoge) for IJ based IDEs.
+
+<!-- Plugin description end -->
 
 ## Installation
 
