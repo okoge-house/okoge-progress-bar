@@ -12,7 +12,7 @@
 
     <applicationListeners>
         <listener class="kk.kkhouse777.okogeprogressbar.listeners.OkogeProgressListener"
-                  topic="com.intellij.ide.ui.LafManagerListener"/>
+                  topic="com.intellij.ide.ui.LafManagerListener"/> <!--    おそらく不要    -->
         <listener class="kk.kkhouse777.okogeprogressbar.listeners.OkogeProgressListener"
                   topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
