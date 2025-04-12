@@ -9,8 +9,9 @@
 
 name: Run UI Tests
 on:
-  workflow_dispatch
-pull_request: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
 
