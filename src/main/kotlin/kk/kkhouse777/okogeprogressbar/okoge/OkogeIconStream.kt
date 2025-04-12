@@ -8,14 +8,13 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.swing.Icon
 
-class OkogeIconStream(
+class OkogeIconStream private constructor(
     dispatcher: CoroutineDispatcher = Dispatchers.IO,
 ) {
     private var currentSign = true
     private val scope = CoroutineScope(SupervisorJob() + dispatcher)
 
     init {
-        // TODO リークはとりあえず気にしてない
         scope.launch {
             while (true) {
                 currentSign = !currentSign
