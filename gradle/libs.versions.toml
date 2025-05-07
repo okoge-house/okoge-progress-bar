@@ -7,7 +7,7 @@ jupiter = "5.12.2"
 changelog = "2.2.1"
 kotlin = "2.1.20"
 intelliJPlatform = "2.5.0"
-qodana = "2024.3.4"
+qodana = "2025.1.1"
 
 [libraries]
 junit5 = { module = "org.junit.jupiter:junit-jupiter", version.ref = "jupiter"}
