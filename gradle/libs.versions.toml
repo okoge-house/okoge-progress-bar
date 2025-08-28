@@ -1,13 +1,14 @@
 [versions]
 # libraries
 junit = "4.13.2"
-jupiter = "5.12.2"
+jupiter = "5.13.4"
 
 # plugins
 changelog = "2.2.1"
-kotlin = "2.1.20"
+
+kotlin = "2.2.10"
 intelliJPlatform = "2.7.2"
-qodana = "2024.3.4"
+qodana = "2025.2.1"
 
 [libraries]
 junit5 = { module = "org.junit.jupiter:junit-jupiter", version.ref = "jupiter"}
