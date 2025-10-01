@@ -1,7 +1,7 @@
 [versions]
 # libraries
 junit = "4.13.2"
-jupiter = "5.13.4"
+jupiter = "6.0.0"
 
 # plugins
 changelog = "2.2.1"
