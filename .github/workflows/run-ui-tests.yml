@@ -32,12 +32,12 @@ jobs:
             runIde: ./gradlew runIdeForUiTests &
 
     steps:
-      - name: Disk info (before)
+      - name: Cleanup runner cached files
         if: runner.os == 'Linux'
         run: |
-          df -h
-          du -h -d 2 /home/runner | sort -h | tail -n 50 || true
-
+          rm -rf /home/runner/actions-runner/cached/*
+          rm -rf /home/runner/.gradle/caches
+          rm -rf /home/runner/.m2/repository
 
       # Check out the current repository
       - name: Fetch Sources
