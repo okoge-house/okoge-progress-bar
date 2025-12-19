@@ -32,6 +32,12 @@ jobs:
             runIde: ./gradlew runIdeForUiTests &
 
     steps:
+      - name: Disk info (before)
+        if: runner.os == 'Linux'
+        run: |
+          df -h
+          du -h -d 2 /home/runner | sort -h | tail -n 50 || true
+
 
       # Check out the current repository
       - name: Fetch Sources
