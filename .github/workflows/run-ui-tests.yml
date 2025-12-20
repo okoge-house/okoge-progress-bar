@@ -73,7 +73,7 @@ jobs:
       # Upload IDE log if failed
       - name: Upload IDE Log
         if: failure()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ide-log-${{ matrix.os }}
           path: ide.log
