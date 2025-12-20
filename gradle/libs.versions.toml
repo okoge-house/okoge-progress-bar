@@ -6,7 +6,7 @@ jupiter = "5.13.4"
 # plugins
 changelog = "2.4.0"
 kotlin = "2.2.21"
-intelliJPlatform = "2.10.4"
+intelliJPlatform = "2.10.5"
 qodana = "2025.2.4"
 
 [libraries]
