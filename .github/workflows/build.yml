@@ -38,11 +38,10 @@ jobs:
 
       # Free GitHub Actions Environment Disk Space
       - name: Maximize Build Space
-        # jlumbroso/free-disk-space@v1.3.1:
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be
+        uses: jlumbroso/free-disk-space@main
         with:
-          tool-cache: false
-          large-packages: false
+          tool-cache: true
+          large-packages: true
 
       # Check out the current repository
       - name: Fetch Sources
@@ -110,11 +109,10 @@ jobs:
 
       # Free GitHub Actions Environment Disk Space
       - name: Maximize Build Space
-        # jlumbroso/free-disk-space@v1.3.1:
-        uses: jlumbroso/free-disk-space@54081f138730dfa15788a46383842cd2f914a1be
+        uses: jlumbroso/free-disk-space@main
         with:
-          tool-cache: false
-          large-packages: false
+          tool-cache: true
+          large-packages: true
 
       # Check out the current repository
       - name: Fetch Sources
@@ -164,8 +162,8 @@ jobs:
       - name: Maximize Build Space
         uses: jlumbroso/free-disk-space@main
         with:
-          tool-cache: false
-          large-packages: false
+          tool-cache: true
+          large-packages: true
 
       # Check out the current repository
       - name: Fetch Sources
@@ -198,8 +196,8 @@ jobs:
       - name: Maximize Build Space
         uses: jlumbroso/free-disk-space@main
         with:
-          tool-cache: false
-          large-packages: false
+          tool-cache: true
+          large-packages: true
 
       # Check out the current repository
       - name: Fetch Sources
